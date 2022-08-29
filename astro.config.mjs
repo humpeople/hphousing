@@ -30,7 +30,7 @@ export default defineConfig({
    adapter: vercel(),
     }),
     sitemap(),
-    image(),
+    // image(),
   ],
 
   vite: {
