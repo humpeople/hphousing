@@ -9,6 +9,8 @@ import image from "@astrojs/image";
 
 import { SITE } from "./src/config.mjs";
 
+import vercel from '@astrojs/vercel/serverless';
+
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 // https://astro.build/config
@@ -24,6 +26,8 @@ export default defineConfig({
       config: {
         applyBaseStyles: false,
       },
+      output: 'server',
+   adapter: vercel(),
     }),
     sitemap(),
     image(),
