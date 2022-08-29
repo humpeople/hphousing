@@ -1,0 +1,56 @@
+---
+import Layout from "~/layouts/Layout.astro";
+
+import BasicCTA from "~/astro/ctas/BasicCTA.astro";
+import BasicFeatures from "~/astro/features/BasicFeatures.astro";
+import StepsFeatures from "~/astro/features/StepsFeatures.astro";
+import HeroWithImage from "~/astro/hero/HeroWithImage.astro";
+---
+
+<Layout
+  title="Contact"
+  description="Humboldt Park Housing Project"
+>
+  <main class="mt-20">
+    <div
+    class="relative inset-0 bg-blue-50 dark:bg-slate-800 pointer-events-none mb-32"
+    aria-hidden="true"
+  >
+    
+    <!-- <HeroWithImage /> -->
+    <!-- <BasicFeatures />
+    <StepsFeatures />
+    <BasicCTA /> -->
+    <section class="relative">
+    
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+          <div class="py-12 md:py-20">
+            <div class="max-w-6xl mx-auto text-center pb-12">
+              <h2
+                class="text-4xl md:text-5xl font-bold leading-tighter tracking-tighter mb-4"
+              >
+               Let's get in touch!
+              </h2>
+              <p class="text-xl text-gray-600 dark:text-slate-400">
+                <b>Email:</b> 
+              </p>
+              <p class="text-xl text-gray-600 dark:text-slate-400">
+                hptenantpower@gmail.com
+              </p>
+              <br>
+              <p class="text-xl text-gray-600 dark:text-slate-400">
+                <b>Follow us:</b>
+              </p>
+              <p class="text-xl text-gray-600 dark:text-slate-400">
+                Twitter @housinghp
+              </p>
+              <p class="text-xl text-gray-600 dark:text-slate-400">
+                Insta @hp.housingproject
+             </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      </div>
+  </main>
+</Layout>
