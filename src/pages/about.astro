@@ -1,26 +1,21 @@
 ---
 import Layout from "~/layouts/Layout.astro";
-import { Image } from '@astrojs/image/components';
-import Hanging from './public/images/hanging.jpg';
+import { Image } from "@astrojs/image/components";
+import hanging from "../assets/images/hanging.jpg";
 
-
-import BasicCTA from "~/astro/ctas/BasicCTA.astro";
-import BasicFeatures from "~/astro/features/BasicFeatures.astro";
-import StepsFeatures from "~/astro/features/StepsFeatures.astro";
-import HeroWithImage from "~/astro/hero/HeroWithImage.astro";
+// import BasicCTA from "~/astro/ctas/BasicCTA.astro";
+// import BasicFeatures from "~/astro/features/BasicFeatures.astro";
+// import StepsFeatures from "~/astro/features/StepsFeatures.astro";
+// import HeroWithImage from "~/astro/hero/HeroWithImage.astro";
 ---
 
-<Layout
-  title="About"
-  description="Humboldt Park Housing Project"
->
+<Layout title="About" description="Humboldt Park Housing Project">
   <main class="mt-20">
-    
     <!-- <HeroWithImage />
-    <BasicFeatures /> 
+    <BasicFeatures />
     <StepsFeatures /> -->
     <!-- <BasicCTA /> -->
-   
+
     <section class="relative">
       <div class="max-w-6xl mx-auto px-4 sm:px-6">
         <div class="pt-20 pb-6 md:pt-20 md:pb-1">
@@ -31,37 +26,47 @@ import HeroWithImage from "~/astro/hero/HeroWithImage.astro";
               What is the Humboldt Park Housing Project?
             </h2>
             <p class="text-xl lg:text-2xl text-gray-600 dark:text-slate-400">
-              Humboldt Park Housing Project is a coalition of community members and activists demanding that Chicago Housing Authority turnover their vacant units to people who need housing. 
+              Humboldt Park Housing Project is a coalition of community members
+              and activists demanding that Chicago Housing Authority turnover
+              their vacant units to people who need housing.
             </p>
           </div>
         </div>
       </div>
     </section>
-    
 
-<section>
-  <div class="max-w-6xl mx-auto px-4 sm:px-6">
-    <div class="py-3 md:py-6">
-      <div class="py-2 sm:py-3 lg:py-8">
-        <div class="w-full place-content-center flex flex-wrap -mx-8">
-          <div class="w-3/5 lg:w-1/2 pb-10 px-1">
-            <Image src={Hanging} 
-            format={"jpeg"}
-            width={490}
-            height={680}/>
-            </div>
-         <div class="w-full lg:w-1/2 px-8"> 
-            <div class="mb-12 lg:mb-0 pb-12 lg:pb-0 border-b lg:border-b-0">
-              <h2 class="mb-4 text-3xl lg:text-4xl font-bold font-heading">
-                In late 2021, the Humboldt Park Housing Project (HPHP) began to occupy vacant public housing after a new homeless encampment opened in our park while our neighborhood is littered with vacant public housing.
-              </h2>
-              <p class="mb-8 text-justify lg:text-justify text-xl text-gray-600 dark:text-gray-400">
-                The group occupied four buildings that had sat vacant for several years due to Chicago Housing Authority’s chronic neglect. 
-On Tuesday, July 26, everyone in these four houses was violently and illegally locked out by Hispanic Housing Development Corporation (HHDC), CHA’s private property management. A week later the press came as they re-occupied their house and forced HHDC and CHA to go through their legal eviction process. 
-Now, we are demanding CHA, HHDC, and all other private management companies immediately desist in illegal lockouts and that vacant public housing be turned over to community members who need housing. 
-
-              </p>
-              <!-- <div class="w-full md:w-1/3">
+    <section>
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="py-3 md:py-6">
+          <div class="py-2 sm:py-3 lg:py-8">
+            <div class="w-full place-content-center flex flex-wrap -mx-8">
+              <div class="w-3/5 lg:w-1/2 pb-10 px-1">
+                <Image src={hanging} format={"jpeg"} width={490} height={680} />
+              </div>
+              <div class="w-full lg:w-1/2 px-8">
+                <div class="mb-12 lg:mb-0 pb-12 lg:pb-0 border-b lg:border-b-0">
+                  <h2 class="mb-4 text-3xl lg:text-4xl font-bold font-heading">
+                    In late 2021, the Humboldt Park Housing Project (HPHP) began
+                    to occupy vacant public housing after a new homeless
+                    encampment opened in our park while our neighborhood is
+                    littered with vacant public housing.
+                  </h2>
+                  <p
+                    class="mb-8 text-justify lg:text-justify text-xl text-gray-600 dark:text-gray-400"
+                  >
+                    The group occupied four buildings that had sat vacant for
+                    several years due to Chicago Housing Authority’s chronic
+                    neglect. On Tuesday, July 26, everyone in these four houses
+                    was violently and illegally locked out by Hispanic Housing
+                    Development Corporation (HHDC), CHA’s private property
+                    management. A week later the press came as they re-occupied
+                    their house and forced HHDC and CHA to go through their
+                    legal eviction process. Now, we are demanding CHA, HHDC, and
+                    all other private management companies immediately desist in
+                    illegal lockouts and that vacant public housing be turned
+                    over to community members who need housing.
+                  </p>
+                  <!-- <div class="w-full md:w-1/3">
                 <button
                   type="button"
                   class="btn bg-blue-600 hover:bg-blue-700 focus:ring-blue-500 focus:ring-offset-blue-200 text-white transition ease-in duration-200 text-center text-base font-medium shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2"
@@ -69,11 +74,10 @@ Now, we are demanding CHA, HHDC, and all other private management companies imme
                   Donate here
                 </button>
               </div> -->
-            </div>
-          </div>
-          
-          
-          <!-- <div class="w-full lg:w-1/2 px-8">
+                </div>
+              </div>
+
+              <!-- <div class="w-full lg:w-1/2 px-8">
             <ul class="space-y-12">
               <li class="flex -mx-4">
                 <div class="px-4">
@@ -124,12 +128,10 @@ Now, we are demanding CHA, HHDC, and all other private management companies imme
               </li>
             </ul>
           </div> -->
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</section> 
-
-
+    </section>
   </main>
 </Layout>
