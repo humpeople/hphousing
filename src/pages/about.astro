@@ -1,5 +1,8 @@
 ---
 import Layout from "~/layouts/Layout.astro";
+import { Image } from '@astrojs/image/components';
+import Hanging from './src/assets/images/hanging.jpg';
+
 
 import BasicCTA from "~/astro/ctas/BasicCTA.astro";
 import BasicFeatures from "~/astro/features/BasicFeatures.astro";
@@ -42,7 +45,7 @@ import HeroWithImage from "~/astro/hero/HeroWithImage.astro";
       <div class="py-2 sm:py-3 lg:py-8">
         <div class="w-full place-content-center flex flex-wrap -mx-8">
           <div class="w-3/5 lg:w-1/2 pb-10 px-1">
-            <img src="./src/assets/images/hanging.jpg" alt="Hanging banner">
+            <Image src={Hanging} />
             </div>
          <div class="w-full lg:w-1/2 px-8"> 
             <div class="mb-12 lg:mb-0 pb-12 lg:pb-0 border-b lg:border-b-0">
