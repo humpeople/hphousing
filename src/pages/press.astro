@@ -1,5 +1,13 @@
 ---
 import Layout from "~/layouts/Layout.astro";
+import { Image } from "@astrojs/image/components";
+import igd from "../assets/images/igd.jpg";
+import wilson from "../assets/images/wilson.jpg";
+import suntimesaug from "../assets/images/suntimesaug.jpg";
+import tribuneaug from "../assets/images/tribuneaug.jpg";
+import fox32 from "../assets/images/fox32.jpg";
+import telemundo from "../assets/images/telemundo.jpg";
+
 
 // import BasicCTA from "~/components/astro/ctas/BasicCTA.astro";
 // import BasicFeatures from "~/components/astro/features/BasicFeatures.astro";
@@ -52,7 +60,8 @@ import Layout from "~/layouts/Layout.astro";
               <a
                 href="https://itsgoingdown.org/you-dont-need-a-key-if-you-can-change-the-locks/"
               >
-                <img src="images/igd.jpg" alt="Protest" />
+                <Image src={igd} format={"jpeg"} width={580} height={340} alt="Protest" />
+              </div>
               </a>
             </div>
           </div>
@@ -86,7 +95,7 @@ import Layout from "~/layouts/Layout.astro";
               <a
                 href="https://blockclubchicago.org/2022/08/09/does-public-housing-belong-to-the-public-humboldt-park-squatters-clash-with-developer-cha-over-long-empty-apartments/"
               >
-                <img src="images/wilson.jpg" alt="Protest" />
+                <Image src={wilson} format={"jpeg"} width={580} height={340} alt="Protest" />
               </a>
             </div>
           </div>
@@ -120,7 +129,7 @@ import Layout from "~/layouts/Layout.astro";
               <a
                 href="https://chicago.suntimes.com/2022/8/8/23293490/chicago-housing-authority-cha-owned-house-humboldt-park-protest-occupy"
               >
-                <img src="images/suntimesaug.jpg" alt="cops" />
+                <Image src={suntimesaug} format={"jpeg"} width={580} height={340} alt="Cops" />
               </a>
             </div>
           </div>
@@ -154,7 +163,7 @@ import Layout from "~/layouts/Layout.astro";
               <a
                 href="https://www.chicagotribune.com/news/ct-cha-humboldt-park-residents-occupy-vacant-homes-20220806-ap344mvna5gnlhc7m5kvzwuzuu-story.html"
               >
-                <img src="images/tribuneaug.jpg" alt="group" />
+                <Image src={tribuneaug} format={"jpeg"} width={580} height={340} alt="Group" />
               </a>
             </div>
           </div>
@@ -188,7 +197,7 @@ import Layout from "~/layouts/Layout.astro";
               <a
                 href="https://www.telemundochicago.com/fotosyvideos/protestan-contra-desalojo-de-personas-de-bajos-recursos-de-una-vivienda-en-humboldt-park/2282712/"
               >
-                <img src="images/telemundo.jpg" alt="group" />
+                <Image src={telemundo} format={"jpeg"} width={580} height={340} alt="protestor making sign" />
               </a>
             </div>
           </div>
@@ -222,7 +231,7 @@ import Layout from "~/layouts/Layout.astro";
               <a
                 href="https://www.fox32chicago.com/news/chicago-organization-claims-hispanic-housing-development-corporation-isnt-doing-enough-to-fix-up-vacant-homes?%5C"
               >
-                <img src="images/fox32.jpg" alt="group" />
+                <Image src={fox32} format={"jpeg"} width={580} height={340} alt="group" />
               </a>
             </div>
           </div>
